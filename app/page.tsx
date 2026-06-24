@@ -904,7 +904,7 @@ useEffect(() => {
               {/* Bar chart */}
               {chartType === 'bar' && (
                 <ResponsiveContainer width="100%" height={350}>
-                  <BarChart data={yearlyChartData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }} cursor={false}>
+                  <BarChart data={yearlyChartData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" vertical={false}/>
                     <XAxis dataKey="year" tick={{ fill: 'rgba(255,255,255,0.35)', fontSize: 11, fontFamily: 'Lexend, sans-serif', fontWeight: 300 }} axisLine={false} tickLine={false}/>
                     <YAxis tickFormatter={(v: number) => v >= 1000 ? `${(v / 1000).toFixed(0)}k€` : `${v}€`} tick={{ fill: 'rgba(255,255,255,0.35)', fontSize: 11, fontFamily: 'Lexend, sans-serif', fontWeight: 300 }} axisLine={false} tickLine={false} width={52}/>
